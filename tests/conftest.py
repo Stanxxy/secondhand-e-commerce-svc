@@ -1,9 +1,9 @@
 import sys
 import pytest
 
-from project_name import create_app
-from project_name.ext.commands import populate_db
-from project_name.ext.database import db
+from secondhand_e_commerce_svc import create_app
+from secondhand_e_commerce_svc.ext.commands import populate_db
+from secondhand_e_commerce_svc.ext.database import db
 
 
 @pytest.fixture(scope="session")

@@ -1,7 +1,7 @@
 from flask import abort, render_template
 from flask_simplelogin import login_required
 
-from project_name.models import Product
+from secondhand_e_commerce_svc.models import Product
 
 
 def index():

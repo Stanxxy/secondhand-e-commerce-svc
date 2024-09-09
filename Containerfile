@@ -2,8 +2,8 @@ FROM python:3.7-alpine
 COPY . /app
 WORKDIR /app
 RUN pip install .
-RUN project_name create-db
-RUN project_name populate-db
-RUN project_name add-user -u admin -p admin
+RUN secondhand_e_commerce_svc create-db
+RUN secondhand_e_commerce_svc populate-db
+RUN secondhand_e_commerce_svc add-user -u admin -p admin
 EXPOSE 5000
-CMD ["project_name", "run"]
+CMD ["secondhand_e_commerce_svc", "run"]
